@@ -1,0 +1,15 @@
+img {
+  margin-left: 0; }
+
+div[class^="col"] {
+  display: flex;
+  flex-direction: column; }
+
+span {
+  display: flex;
+  justify-content: center; }
+
+p {
+  text-align: center; }
+
+/*# sourceMappingURL=event.css.map */
