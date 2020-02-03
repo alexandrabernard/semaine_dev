@@ -85,7 +85,7 @@ body{
     transform: translateY(6px);
   }
 }
-@-webkit-keyframes mouse-scroll {
+@keyframes mouse-scroll {
   0% {
     opacity: 1;
   }
