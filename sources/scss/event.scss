@@ -1,10 +1,27 @@
-img {
-  margin-left: 0; }
+html{
+  font-size : 62.5%;
+  font-family:
+}
+
+img{
+  border-radius: 4px;
+  min-width:100%;
+  max-width: 100%;
+  display : block;
+  object-fit: cover;
+  height: 250px;
+}
+
+.image{
+  position: relative;
+  display: inline-block;
+  overflow-y: hidden;
+}
 
 div[class^="col"] {
-  position: relative;
   display: flex;
   flex-direction: column;
+  height : 350px;
 }
 
 span {
@@ -17,7 +34,7 @@ p {
 
 .hover {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
   left: 0;
   width: 100%;
   padding: 5px 2px;
@@ -26,12 +43,35 @@ p {
   color: #FFF;
   margin: 0;
   transition:all linear 0.4s;
+  transition-timing-function: ease-in;
 }
 
   div[class^="col"]:hover .hover{
   display : block;
   bottom: 100px;
 }
+input{
+  outline: none;
+}
+input[type=submit]{
+  background-color: #1f59b2;
+  border-radius: 30px;
+  border: solid 1px;
+  border-color: white;
+  color: white;
+  padding: 9px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: white; /* Green */
+  color: #1f59b2;
+}
+
 /** GRID **/
 html,
 body {
