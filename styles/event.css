@@ -1,82 +1,3 @@
-html {
-  font-size: 62.5%;
-  margin: 0 auto;
-  padding: 0 auto; }
-
-@font-face {
-  font-family: "neutra";
-  src: url("../font/NeutraText-BookAlt.ttf"); }
-img {
-  border-radius: 4px;
-  min-width: 100%;
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-  height: 250px; }
-
-.image {
-  height: 250px;
-  position: relative;
-  display: inline-block;
-  overflow-y: hidden; }
-
-div[class^="col"] {
-  display: flex;
-  flex-direction: column;
-  height: 350px; }
-
-span {
-  display: flex;
-  justify-content: center; }
-
-p {
-  text-align: center; }
-
-.hover {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  padding: 5px 2px;
-  text-align: center;
-  background: rgba(255, 175, 0, 0.5);
-  color: #FFF;
-  margin: 0;
-  transition: all linear 0.4s;
-  transition-timing-function: ease-in; }
-
-div[class^="col"]:hover .hover {
-  display: block;
-  bottom: 100px; }
-
-input[type=text], select {
-  outline: none;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; }
-
-input[type=submit] {
-  background-color: #1f59b2;
-  border-radius: 30px;
-  border: solid 1px;
-  border-color: white;
-  color: white;
-  padding: 9px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s; }
-
-.button:hover {
-  background-color: white;
-  color: #1f59b2; }
-
-/** GRID **/
 html,
 body {
   height: 100%;
@@ -85,8 +6,7 @@ body {
   padding: 0;
   left: 0;
   top: 0;
-  font-size: 100%;
-  font-family: "neutra"; }
+  font-size: 100%; }
 
 * {
   line-height: 1.5; }
@@ -140,18 +60,21 @@ p {
 .hidden-sm {
   display: none; }
 
+@media only screen and (max-width: 33.75em) {
+  div[class^="col"].hide_on_mobile {
+    display: none; } }
 .container {
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (min-width: 33.75em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 60em) {
+    .container {
+      width: 75%;
+      max-width: 60rem; } }
 
-@media only screen and (min-width: 33.75em) {
-  .container {
-    width: 80%; } }
-@media only screen and (min-width: 60em) {
-  .container {
-    width: 75%;
-    max-width: 60rem; } }
 .row {
   position: relative;
   width: 100%; }
@@ -255,5 +178,92 @@ p {
 
   .hidden-sm {
     display: block; } }
+@font-face {
+  font-family: Neutra;
+  src: url("../font/NeutraText-BookAlt.ttf"); }
+body {
+  font-family: 'Neutra';
+  background: #111d50;
+  background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
+  color: white; }
+
+img {
+  border-radius: 4px;
+  min-width: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 250px; }
+
+.image_container {
+  margin: 0;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  overflow-y: hidden; }
+
+div[class^="col"] {
+  display: flex;
+  flex-direction: column;
+  height: 350px; }
+
+span {
+  display: flex;
+  justify-content: center; }
+
+p {
+  text-align: center; }
+
+.hover {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  padding: 5px 2px;
+  text-align: center;
+  background: rgba(255, 175, 0, 0.5);
+  color: #FFF;
+  margin: 0;
+  transition: all linear 0.4s;
+  transition-timing-function: ease-in; }
+
+div[class^="col"]:hover .hover {
+  display: block;
+  bottom: 100px; }
+
+img.col-5.image {
+  margin: 0; }
+
+input[type=text], select {
+  outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  background-color: #1f59b2;
+  border-radius: 30px;
+  border: solid 1px;
+  border-color: white;
+  color: white;
+  padding: 9px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+
+.button:hover {
+  background-color: white;
+  color: #1f59b2; }
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
 
 /*# sourceMappingURL=event.css.map */
