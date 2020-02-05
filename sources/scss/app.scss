@@ -1,5 +1,18 @@
 @import "simple-grid";
 
+@font-face{
+  font-family: Neutra;
+  src : url("../font/NeutraText-BookAlt.ttf");
+}
+
+body{
+  font-family: 'Neutra';
+  background: rgb(17,29,80);
+  background: linear-gradient(90deg, rgba(17,29,80,1) 0%, rgba(26,14,71,1) 35%, rgba(25,17,72,1) 100%);
+  color: white;
+  text-align: center;
+}
+/** MOUSE **
 body{
   background-color: grey;
 }
@@ -106,4 +119,71 @@ body{
   100% {
     opacity: 1;
   }
+}
+
+** MOUSE **/
+
+.first_part{
+  display: flex;
+  flex-direction: row;
+}
+
+.informations{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.brosse_a_dent{
+  min-width:100%;
+  max-width: 100%;
+  display : block;
+  object-fit: cover;
+  height: 60rem;
+}
+
+img{
+  min-width:100%;
+  max-width: 100%;
+  display : block;
+  object-fit: cover;
+}
+
+.fade_left{
+  width: 500px;
+  position: relative;
+  animation-name: fade_left;
+  animation-duration: 4s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes fade_left {
+  from {right: -100%;}
+  to {right: 0%;}
+}
+
+.button{
+  color: white;
+  padding: 9px 32px;
+  background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px;
+}
+
+
+.button_container{
+  display: flex;justify-content: space-between;
+}
+
+.discover{
+  color: white;
+  text-decoration: none;
+}
+
+.test{
+  display: flex;
+  flex-direction: row;
+}
+
+.test2{
+  padding-top: 200px;
 }
