@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Neutra;
+  src: url("../font/NeutraText-BookAlt.ttf"); }
+body {
+  font-family: 'Neutra';
+  margin: 0 auto;
+  padding: 0 auto;
+  background-image: url(../images/fond.png); }
+
+#header {
+  display: flex;
+  align-items: center;
+  height: 150px; }
+
+.colheader {
+  margin-top: 15px !important; }
+
+.link {
+  font-size: 24px;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all .2s ease-in-out; }
+
+.link:hover {
+  font-size: 30px;
+  transform-origin: center;
+  transition: all .2s ease-in-out; }
+
+#footer {
+  display: flex;
+  align-items: center;
+  height: 150px; }
+
+.border {
+  position: relative; }
+
+.white_border_header {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  width: 1.5px;
+  right: -12%;
+  top: -2%; }
+
+h2, p {
+  color: white;
+  font-size: 14px; }
+
+.link_footer {
+  color: white;
+  text-decoration: none;
+  transition: all .2s ease-in-out; }
+
+.margin_footer {
+  margin: 0; }
+
+.white_border_footer {
+  position: absolute;
+  background-color: white;
+  height: 1.5px;
+  width: 110px; }
+
+.resize_logo {
+  width: 30px;
+  height: 30px; }
+
+/*# sourceMappingURL=app_header.css.map */
