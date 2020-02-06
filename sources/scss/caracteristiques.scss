@@ -1,15 +1,16 @@
 @import "simple-grid";
 
 @font-face{
-  font-family: Neutra;
-  src : url("../font/NeutraText-BookAlt.ttf");
+  font-family: Avenir;
+  src : url("../font/AvenirLTStd-Book.otf");
+  src : url("../font/AvenirLTStd-Medium.otf");
+  src : url("../font/AvenirLTStd-Roman.otf");
 }
 body{
-  font-family: 'Neutra';
+  font-family: 'Avenir';
   background: rgb(17,29,80);
   background: linear-gradient(90deg, rgba(17,29,80,1) 0%, rgba(26,14,71,1) 35%, rgba(25,17,72,1) 100%);
   color: white;
-  // text-align: center;
 }
 
 
@@ -76,14 +77,14 @@ h2{
   position: absolute;
   animation-name: fade_right;
   animation-duration: 4s;
+  animation-fill-mode: both;
   transition-timing-function: ease-in;
-  right: 85%;
   bottom: 25%;
 }
 
 @keyframes fade_right {
   from {left: -100%;}
-  to {left: -64%;}
+  to {left: -63%;}
 }
 
 // // sixth PART
@@ -95,5 +96,10 @@ h2{
 
 .resize{
   transform: scale(0.8);
+  margin: 0 !important;
+}
+
+// ninth PART
+.test4{
   margin: 0 !important;
 }

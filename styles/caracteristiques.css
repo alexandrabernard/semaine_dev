@@ -178,10 +178,12 @@ p {
   .hidden-sm {
     display: block; } }
 @font-face {
-  font-family: Neutra;
-  src: url("../font/NeutraText-BookAlt.ttf"); }
+  font-family: Avenir;
+  src: url("../font/AvenirLTStd-Book.otf");
+  src: url("../font/AvenirLTStd-Medium.otf");
+  src: url("../font/AvenirLTStd-Roman.otf"); }
 body {
-  font-family: 'Neutra';
+  font-family: 'Avenir';
   background: #111d50;
   background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
   color: white; }
@@ -226,17 +228,20 @@ h2 {
   position: absolute;
   animation-name: fade_right;
   animation-duration: 4s;
+  animation-fill-mode: both;
   transition-timing-function: ease-in;
-  right: 85%;
   bottom: 25%; }
 
 @keyframes fade_right {
   from {
     left: -100%; }
   to {
-    left: -64%; } }
+    left: -63%; } }
 .resize {
   transform: scale(0.8);
+  margin: 0 !important; }
+
+.test4 {
   margin: 0 !important; }
 
 /*# sourceMappingURL=caracteristiques.css.map */
