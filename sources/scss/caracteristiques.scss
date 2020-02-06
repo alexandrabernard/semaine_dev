@@ -12,6 +12,15 @@ body{
   // text-align: center;
 }
 
+
+
+// .logo{
+//   min-width:100%;
+//   max-width: 100%;
+//   display : block;
+//   object-fit: cover;
+// }
+
 // first part
 
 .first_part{
@@ -61,7 +70,6 @@ h2{
 
 .top{
   transform: scale(0.7);
-  // position: absolute;
 }
 
 .fade_right{
@@ -69,11 +77,23 @@ h2{
   animation-name: fade_right;
   animation-duration: 4s;
   transition-timing-function: ease-in;
-  right: 80%;
-  bottom: 15%;
+  right: 85%;
+  bottom: 25%;
 }
 
 @keyframes fade_right {
   from {left: -100%;}
   to {left: -64%;}
+}
+
+// // sixth PART
+// .petite_brosse{
+//   padding-bottom: 30%;
+// }
+
+// eight PART
+
+.resize{
+  transform: scale(0.8);
+  margin: 0 !important;
 }

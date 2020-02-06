@@ -227,13 +227,16 @@ h2 {
   animation-name: fade_right;
   animation-duration: 4s;
   transition-timing-function: ease-in;
-  right: 80%;
-  bottom: 15%; }
+  right: 85%;
+  bottom: 25%; }
 
 @keyframes fade_right {
   from {
     left: -100%; }
   to {
     left: -64%; } }
+.resize {
+  transform: scale(0.8);
+  margin: 0 !important; }
 
 /*# sourceMappingURL=caracteristiques.css.map */
