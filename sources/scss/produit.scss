@@ -1,0 +1,91 @@
+@import "simple-grid";
+
+@font-face{
+  font-family: Avenir;
+  src : url("../font/AvenirLTStd-Book.otf");
+  src : url("../font/AvenirLTStd-Medium.otf");
+  src : url("../font/AvenirLTStd-Roman.otf");
+}
+body{
+  font-family: 'Avenir';
+  background: rgb(17,29,80);
+  background: linear-gradient(90deg, rgba(17,29,80,1) 0%, rgba(26,14,71,1) 35%, rgba(25,17,72,1) 100%);
+  color: white;
+}
+
+
+.button{
+  color: white;
+  padding: 9px 32px;
+  background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px;
+  border: none;
+}
+
+.button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:$font-weight-light;
+  padding-left: 4rem;
+}
+
+li{
+  list-style: initial;
+}
+
+.resize{
+  transform: scale(1.5);
+}
+
+.iPutAPadding{
+  padding-top: 30px;
+}
+
+.iPutAPadding .button_container{
+  padding-right: 50px;
+  padding-left: 0px;
+}
+.button{
+  margin-top: 30px;
+}
+
+.icon_container p{
+  margin: 0;
+}
+
+// brosse et chargeur
+
+.brosseContainer{
+  left: 190px;
+  top: -70px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brosse_debout{
+  transform: scale(0.6);
+}
+
+.socle{
+  position: absolute;
+  bottom: 110px;
+  left: 60px;
+}
+
+
+.fade_bottom{
+  position: relative;
+  animation-name: fade_bottom;
+  animation-duration: 4s;
+  // animation-fill-mode: both;
+  transition-timing-function: ease-in;
+  // bottom: 25%;
+}
+
+@keyframes fade_bottom {
+  from {top: -100%;}
+  to {top: 10%;}
+}
