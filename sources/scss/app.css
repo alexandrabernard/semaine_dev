@@ -180,9 +180,6 @@ p {
 @font-face {
   font-family: Neutra;
   src: url("../font/NeutraText-BookAlt.ttf"); }
-html, body {
-  overflow-x: hidden; }
-
 body {
   font-family: 'Neutra';
   background: #111d50;
@@ -300,48 +297,63 @@ body{
 }
 
 ** MOUSE **/
-.first_relative {
-  position: relative; }
+.informations {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; }
+
+.brosse_a_dent {
+  min-width: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 60rem;
+  transform: scale(1.4); }
 
 img {
-  position: absolute;
-  top: 0%;
-  left: 55%;
-  transform: scale(0.9); }
+  min-width: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover; }
 
 .fade_left {
   width: 500px;
+  position: relative;
   animation-name: fade_left;
-  animation-duration: 5s;
-  transition-timing-function: ease-in; }
+  animation-duration: 4s;
+  transition-timing-function: ease-in;
+  padding-top: 25%; }
 
 @keyframes fade_left {
   from {
-    left: 150%; }
+    right: -100%; }
   to {
-    left: 55%; } }
-.first_button {
+    right: 0%; } }
+.button {
   color: white;
   padding: 9px 32px;
   background: linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
-  border-radius: 30px;
-  margin-right: 80px;
-  border: none;
-  cursor: pointer; }
+  border-radius: 30px; }
 
-.second_button {
-  color: white;
-  padding: 9px 32px;
-  background: linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
-  border-radius: 30px;
-  margin-left: 80px;
-  border: none; }
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  padding-left: 4rem; }
 
 .discover {
   color: white;
   text-decoration: none; }
 
-.iPutAPadding {
+.IPutAPadding {
   padding-top: 16rem; }
 
-/*# sourceMappingURL=main.css.map */
+.third_height {
+  padding-top: 300px; }
+
+.flex_row {
+  display: flex;
+  flex-direction: row; }
+
+/*# sourceMappingURL=app.css.map */

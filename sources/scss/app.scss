@@ -5,6 +5,10 @@
   src : url("../font/NeutraText-BookAlt.ttf");
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
 body{
   font-family: 'Neutra';
   background: rgb(17,29,80);
@@ -12,6 +16,8 @@ body{
   color: white;
   text-align: center;
 }
+
+
 /** MOUSE **
 body{
   background-color: grey;
@@ -126,68 +132,79 @@ body{
 // first part
 
 
-.informations{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
+//
+//
+// .brosse_a_dent{
+//   display : block;
+//   object-fit: cover;
+//   height: 60rem;
+// }
 
-.brosse_a_dent{
-  min-width:100%;
-  max-width: 100%;
-  display : block;
-  object-fit: cover;
-  height: 60rem;
-  transform: scale(1.4);
+.first_relative{
+  position: relative;
 }
-
 
 img{
-  min-width:100%;
-  max-width: 100%;
-  display : block;
-  object-fit: cover;
+  position : absolute;
+  top: 0%;
+  left: 55%;
+  transform: scale(0.9);
 }
 
 .fade_left{
   width: 500px;
-  position: relative;
   animation-name: fade_left;
-  animation-duration: 4s;
+  animation-duration: 5s;
   transition-timing-function: ease-in;
-  padding-top: 25%;
 }
 
 @keyframes fade_left {
-  from {right: -100%;}
-  to {right: 0%;}
+  from {left: 150%;}
+  to {left: 55%;}
 }
 
-.button{
+.first_button{
   color: white;
   padding: 9px 32px;
   background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
   border-radius: 30px;
+  margin-right: 80px;
+  border : none;
+  cursor: pointer;
+}
+
+.second_button{
+  color: white;
+  padding: 9px 32px;
+  background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px;
+  margin-left: 80px;
+  border: none;
 }
 
 
-.button_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight:$font-weight-light;
-  padding-left: 4rem;
-}
+// .button_container{
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   font-weight:$font-weight-light;
+//   padding-left: 4rem;
+// }
 
 .discover{
   color: white;
   text-decoration: none;
 }
 
-.IPutAPadding{
+.iPutAPadding{
   padding-top: 16rem;
 }
 
+
+
+// .pre_order{
+//   max-width: 190px;
+// }
 
 // second PART
 
@@ -198,11 +215,11 @@ img{
 
 // third PART
 
-.third_height{
-padding-top: 300px;
-}
+// .third_height{
+// padding-top: 300px;
+// }
 
-.flex_row{
-  display: flex;
-  flex-direction: row;
-}
+// .flex_row{
+//   display: flex;
+//   flex-direction: row;
+// }
