@@ -75,6 +75,38 @@ li{
   left: 60px;
 }
 
+select{
+  outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container{
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.other_size:not(h2){
+  font-size: 20px;
+}
+
+h2{
+  font-size: 75px;
+  font-weight: 700;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: black;
+}
+
 
 .fade_bottom{
   position: relative;
