@@ -186,84 +186,54 @@ body {
   background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
   color: white; }
 
-img {
-  border-radius: 4px;
-  min-width: 100%;
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-  height: 250px; }
-
-.image_container {
-  margin: 0;
-  height: 250px;
-  position: relative;
-  display: inline-block;
-  overflow-y: hidden; }
-
-div[class^="col"] {
-  display: flex;
-  flex-direction: column;
-  height: 350px; }
-
-span {
-  display: flex;
-  justify-content: center; }
-
-p {
+.first_part {
+  padding-top: 10%;
   text-align: center; }
 
-.hover {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  padding: 5px 2px;
-  text-align: center;
-  background: rgba(255, 175, 0, 0.5);
-  color: #FFF;
-  margin: 0;
-  transition: all linear 0.4s;
-  transition-timing-function: ease-in; }
+.brosse_debout {
+  transform: scale(7); }
 
-div[class^="col"]:hover .hover {
-  display: block;
-  bottom: 100px; }
+div .brosse_debout {
+  padding-top: 10%; }
 
-img.col-5.image {
-  margin: 0; }
+.informations {
+  padding-top: 10%; }
 
-input[type=text], select {
-  outline: none;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; }
-
-input[type=submit] {
-  background-color: #1f59b2;
-  border-radius: 30px;
-  border: solid 1px;
-  border-color: white;
+.button {
   color: white;
   padding: 9px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s; }
+  background: linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px; }
 
-.button:hover {
-  background-color: white;
-  color: #1f59b2; }
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  padding-left: 4rem; }
 
-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  color: black; }
+h2 {
+  text-transform: uppercase; }
 
-/*# sourceMappingURL=event.css.map */
+.second_part {
+  padding-top: 40%;
+  text-align: center; }
+
+.top {
+  transform: scale(0.7); }
+
+.fade_right {
+  position: absolute;
+  animation-name: fade_right;
+  animation-duration: 4s;
+  transition-timing-function: ease-in;
+  right: 80%;
+  bottom: 15%; }
+
+@keyframes fade_right {
+  from {
+    left: -100%; }
+  to {
+    left: -64%; } }
+
+/*# sourceMappingURL=caracteristiques.css.map */

@@ -1,0 +1,79 @@
+@import "simple-grid";
+
+@font-face{
+  font-family: Neutra;
+  src : url("../font/NeutraText-BookAlt.ttf");
+}
+body{
+  font-family: 'Neutra';
+  background: rgb(17,29,80);
+  background: linear-gradient(90deg, rgba(17,29,80,1) 0%, rgba(26,14,71,1) 35%, rgba(25,17,72,1) 100%);
+  color: white;
+  // text-align: center;
+}
+
+// first part
+
+.first_part{
+  padding-top: 10%;
+  text-align: center;
+}
+
+.brosse_debout{
+  transform: scale(7);
+}
+
+div .brosse_debout{
+  padding-top: 10%;
+}
+
+.informations{
+  padding-top: 10%;
+}
+.button{
+  color: white;
+  padding: 9px 32px;
+  background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px;
+}
+
+.button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:$font-weight-light;
+  padding-left: 4rem;
+}
+
+
+h2{
+  text-transform: uppercase;
+}
+
+// second PART
+
+.second_part{
+  padding-top: 40%;
+  text-align: center;
+}
+
+// third PART
+
+.top{
+  transform: scale(0.7);
+  // position: absolute;
+}
+
+.fade_right{
+  position: absolute;
+  animation-name: fade_right;
+  animation-duration: 4s;
+  transition-timing-function: ease-in;
+  right: 80%;
+  bottom: 15%;
+}
+
+@keyframes fade_right {
+  from {left: -100%;}
+  to {left: -64%;}
+}

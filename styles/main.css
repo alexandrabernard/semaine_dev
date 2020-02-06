@@ -81,7 +81,6 @@ p {
 
 .row [class^="col"] {
   float: left;
-  margin: 0.5rem 2%;
   min-height: 0.125rem; }
 
 .row::after {
@@ -298,10 +297,6 @@ body{
 }
 
 ** MOUSE **/
-.first_part {
-  display: flex;
-  flex-direction: row; }
-
 .informations {
   display: flex;
   justify-content: flex-start;
@@ -312,7 +307,8 @@ body{
   max-width: 100%;
   display: block;
   object-fit: cover;
-  height: 60rem; }
+  height: 60rem;
+  transform: scale(1.4); }
 
 img {
   min-width: 100%;
@@ -325,7 +321,8 @@ img {
   position: relative;
   animation-name: fade_left;
   animation-duration: 4s;
-  transition-timing-function: ease-in; }
+  transition-timing-function: ease-in;
+  padding-top: 25%; }
 
 @keyframes fade_left {
   from {
@@ -340,17 +337,23 @@ img {
 
 .button_container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  padding-left: 4rem; }
 
 .discover {
   color: white;
   text-decoration: none; }
 
-.test {
+.IPutAPadding {
+  padding-top: 16rem; }
+
+.third_height {
+  padding-top: 300px; }
+
+.flex_row {
   display: flex;
   flex-direction: row; }
-
-.test2 {
-  padding-top: 200px; }
 
 /*# sourceMappingURL=main.css.map */
