@@ -231,7 +231,8 @@ h2 {
 
 .whitezone-up {
   position: absolute;
-  left: -10vw;
+  left: -1vw;
+  width: 101vw;
   right: 0;
   bottom: 99%;
   z-index: -1;
@@ -239,7 +240,8 @@ h2 {
 
 .whitezone-down {
   position: absolute;
-  left: -10vw;
+  left: -1vw;
+  width: 101vw;
   right: 0;
   top: 99%;
   z-index: -1;
