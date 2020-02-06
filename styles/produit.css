@@ -258,12 +258,6 @@ h2 {
   font-size: 75px;
   font-weight: 700; }
 
-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  color: black; }
-
 .fade_bottom {
   position: relative;
   animation-name: fade_bottom;
