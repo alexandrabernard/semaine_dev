@@ -1,0 +1,284 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%; }
+
+* {
+  line-height: 1.5; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.375rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.875rem; }
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-regular {
+  font-weight: 400; }
+
+.font-heavy {
+  font-weight: 700; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.justify {
+  text-align: justify; }
+
+.hidden-sm {
+  display: none; }
+
+@media only screen and (max-width: 33.75em) {
+  div[class^="col"].hide_on_mobile {
+    display: none; } }
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 33.75em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 60em) {
+    .container {
+      width: 75%;
+      max-width: 60rem; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  min-height: 0.125rem; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%; }
+
+.col-1-sm {
+  width: 4.3333333333%; }
+
+.col-2-sm {
+  width: 12.6666666667%; }
+
+.col-3-sm {
+  width: 21%; }
+
+.col-4-sm {
+  width: 29.3333333333%; }
+
+.col-5-sm {
+  width: 37.6666666667%; }
+
+.col-6-sm {
+  width: 46%; }
+
+.col-7-sm {
+  width: 54.3333333333%; }
+
+.col-8-sm {
+  width: 62.6666666667%; }
+
+.col-9-sm {
+  width: 71%; }
+
+.col-10-sm {
+  width: 79.3333333333%; }
+
+.col-11-sm {
+  width: 87.6666666667%; }
+
+.col-12-sm {
+  width: 96%; }
+
+@media only screen and (min-width: 45em) {
+  .col-1 {
+    width: 4.3333333333%; }
+
+  .col-2 {
+    width: 12.6666666667%; }
+
+  .col-3 {
+    width: 21%; }
+
+  .col-4 {
+    width: 29.3333333333%; }
+
+  .col-5 {
+    width: 37.6666666667%; }
+
+  .col-6 {
+    width: 46%; }
+
+  .col-7 {
+    width: 54.3333333333%; }
+
+  .col-8 {
+    width: 62.6666666667%; }
+
+  .col-9 {
+    width: 71%; }
+
+  .col-10 {
+    width: 79.3333333333%; }
+
+  .col-11 {
+    width: 87.6666666667%; }
+
+  .col-12 {
+    width: 96%; }
+
+  .hidden-sm {
+    display: block; } }
+@font-face {
+  font-family: Avenir;
+  src: url("../font/AvenirLTStd-Book.otf");
+  src: url("../font/AvenirLTStd-Medium.otf");
+  src: url("../font/AvenirLTStd-Roman.otf"); }
+body {
+  font-family: 'Avenir';
+  background: #111d50;
+  background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
+  color: white; }
+
+.button {
+  color: white;
+  padding: 9px 32px;
+  background: linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
+  border-radius: 30px;
+  border: none; }
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  padding-left: 4rem; }
+
+li {
+  list-style: initial; }
+
+.resize {
+  transform: scale(1.5); }
+
+.iPutAPadding {
+  padding-top: 30px; }
+
+.iPutAPadding .button_container {
+  padding-right: 50px;
+  padding-left: 0px; }
+
+.icon_container p {
+  margin: 0; }
+
+.brosseContainer {
+  left: 190px;
+  top: -70px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.brosse_debout {
+  transform: scale(0.6); }
+
+.socle {
+  position: absolute;
+  bottom: 110px;
+  left: 60px; }
+
+select {
+  outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.container {
+  font-size: 28px;
+  font-weight: lighter; }
+
+.other_size:not(h2) {
+  font-size: 20px; }
+
+h2 {
+  font-size: 75px;
+  font-weight: 700; }
+
+.whitezone {
+  color: black;
+  position: relative;
+  z-index: -1;
+  bottom: 100%; }
+
+.whitezone-up {
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  bottom: 0%;
+  z-index: -1;
+  transform: scaleX(-1); }
+
+.fade_bottom {
+  position: relative;
+  animation-name: fade_bottom;
+  animation-duration: 4s;
+  transition-timing-function: ease-in; }
+
+@keyframes fade_bottom {
+  from {
+    top: -100%; }
+  to {
+    top: 10%; } }
+
+/*# sourceMappingURL=produit.css.map */
