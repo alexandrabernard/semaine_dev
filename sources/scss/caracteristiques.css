@@ -186,7 +186,8 @@ body {
   font-family: 'Avenir';
   background: #111d50;
   background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
-  color: white; }
+  color: white;
+  overflow-x: hidden; }
 
 .first_part {
   padding-top: 10%;
@@ -205,7 +206,8 @@ div .brosse_debout {
   color: white;
   padding: 9px 32px;
   background: linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
-  border-radius: 30px; }
+  border-radius: 30px;
+  text-decoration: none; }
 
 .button_container {
   display: flex;
@@ -218,30 +220,109 @@ h2 {
   text-transform: uppercase; }
 
 .second_part {
-  padding-top: 40%;
+  padding-top: 16rem;
   text-align: center; }
+
+.whitezone {
+  background: white;
+  color: black;
+  position: relative;
+  z-index: -1; }
+
+.whitezone-up {
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  bottom: 99%;
+  z-index: -1;
+  transform: scaleX(-1); }
+
+.whitezone-down {
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  top: 99%;
+  z-index: -1;
+  transform: scale(-1); }
 
 .top {
   transform: scale(0.7); }
 
 .fade_right {
   position: absolute;
+  animation-fill-mode: both;
+  left: -100%; }
+
+.fade_right_animate {
   animation-name: fade_right;
   animation-duration: 4s;
-  animation-fill-mode: both;
-  transition-timing-function: ease-in;
-  bottom: 25%; }
+  transition-timing-function: ease-in; }
 
 @keyframes fade_right {
   from {
     left: -100%; }
   to {
     left: -63%; } }
+.short-mode {
+  width: 100%; }
+
+.mode-caption {
+  padding-top: 50px; }
+
+.title-gradient {
+  font-style: italic; }
+
 .resize {
   transform: scale(0.8);
   margin: 0 !important; }
 
 .test4 {
   margin: 0 !important; }
+
+.iPutAMargin {
+  margin-top: 16rem; }
+
+.iPutAPadding {
+  padding-top: 16rem; }
+
+.text-center {
+  text-align: center; }
+
+.text-black {
+  color: #000000; }
+
+.greentext {
+  color: #46D58A; }
+
+.redtext {
+  color: #961338; }
+
+.appdl {
+  width: 100%;
+  height: auto; }
+
+.phone-app img {
+  width: 30%; }
+
+.flexify {
+  display: flex;
+  align-items: center; }
+
+@media screen and (max-width: 60em) {
+  .head-flexify {
+    display: flex;
+    justify-content: center; }
+
+  .brosse_debout + div {
+    text-align: center; }
+
+  .brosse_debout {
+    position: initial;
+    transform: scale(1);
+    height: 50vh;
+    width: auto; }
+
+  .fade_right {
+    display: none; } }
 
 /*# sourceMappingURL=caracteristiques.css.map */

@@ -218,19 +218,43 @@ h2 {
   text-transform: uppercase; }
 
 .second_part {
-  padding-top: 40%;
+  padding-top: 16rem;
   text-align: center; }
+
+.whitezone {
+  background: white;
+  color: black;
+  position: relative;
+  z-index: -1; }
+
+.whitezone-up {
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  bottom: 99%;
+  z-index: -1;
+  transform: scaleX(-1); }
+
+.whitezone-down {
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  top: 99%;
+  z-index: -1;
+  transform: scale(-1); }
 
 .top {
   transform: scale(0.7); }
 
 .fade_right {
   position: absolute;
+  bottom: 25%; }
+
+.fade_right_animate {
   animation-name: fade_right;
   animation-duration: 4s;
   animation-fill-mode: both;
-  transition-timing-function: ease-in;
-  bottom: 25%; }
+  transition-timing-function: ease-in; }
 
 @keyframes fade_right {
   from {
@@ -243,5 +267,11 @@ h2 {
 
 .test4 {
   margin: 0 !important; }
+
+.iPutAMargin {
+  margin-top: 16rem; }
+
+.iPutAPadding {
+  padding-top: 16rem; }
 
 /*# sourceMappingURL=caracteristiques.css.map */

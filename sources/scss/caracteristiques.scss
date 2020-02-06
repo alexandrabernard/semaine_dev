@@ -11,6 +11,7 @@ body{
   background: rgb(17,29,80);
   background: linear-gradient(90deg, rgba(17,29,80,1) 0%, rgba(26,14,71,1) 35%, rgba(25,17,72,1) 100%);
   color: white;
+  overflow-x: hidden;
 }
 
 
@@ -45,6 +46,7 @@ div .brosse_debout{
   padding: 9px 32px;
   background:linear-gradient(to right, #9716B0, #4D14A5, #4118B9, #201CA0);
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .button_container{
@@ -63,8 +65,32 @@ h2{
 // second PART
 
 .second_part{
-  padding-top: 40%;
+  padding-top: 16rem;
   text-align: center;
+}
+
+.whitezone{
+  background: white;
+  color: black;
+  position: relative;
+  z-index: -1;
+}
+
+.whitezone-up{
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  bottom: 99%;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+.whitezone-down{
+  position: absolute;
+  left: -10vw;
+  right: 0;
+  top: 99%;
+  z-index: -1;
+  transform: scale(-1);
 }
 
 // third PART
@@ -75,11 +101,13 @@ h2{
 
 .fade_right{
   position: absolute;
+  animation-fill-mode: both;
+  left: -100%;
+}
+.fade_right_animate{
   animation-name: fade_right;
   animation-duration: 4s;
-  animation-fill-mode: both;
   transition-timing-function: ease-in;
-  bottom: 25%;
 }
 
 @keyframes fade_right {
@@ -87,10 +115,25 @@ h2{
   to {left: -63%;}
 }
 
+.short-mode{
+  width: 100%;
+  // max-height: 60vh;
+}
+.mode-caption{
+  padding-top: 50px;
+}
+
 // // sixth PART
 // .petite_brosse{
 //   padding-bottom: 30%;
 // }
+
+.title-gradient{
+  font-style: italic;
+  // background: -webkit-linear-gradient(#9370D5, #4A386B);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
 
 // eight PART
 
@@ -102,4 +145,57 @@ h2{
 // ninth PART
 .test4{
   margin: 0 !important;
+}
+
+
+.iPutAMargin{
+  margin-top: 16rem;
+}
+.iPutAPadding {
+  padding-top: 16rem; }
+
+.text-center{
+  text-align: center;
+}
+.text-black{
+  color: #000000;
+}
+.greentext{
+  color: #46D58A;
+}
+.redtext{
+  color: #961338;
+}
+
+.appdl{
+  width: 100%;
+  height: auto;
+}
+
+.phone-app img{
+  width: 30%;
+}
+
+.flexify{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: $breakpoint-large){
+  .head-flexify{
+    display: flex;
+    justify-content: center;
+  }
+  .brosse_debout + div{
+    text-align: center;
+  }
+  .brosse_debout{
+    position: initial;
+    transform: scale(1);
+    height: 50vh;
+    width: auto;
+  }
+  .fade_right{
+    display: none;
+  }
 }
