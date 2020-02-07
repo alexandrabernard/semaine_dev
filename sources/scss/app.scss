@@ -71,10 +71,10 @@ body{
   top: -2%;
 }
 
-// h2, p{
-//   color: white;
-//   font-size: 14px;
-// }
+.h2_footer, p_footer{
+  color: white;
+  font-size: 14px;
+}
 
 .link_footer{
   color: white;
@@ -172,6 +172,10 @@ body{
 
 .iPutAPadding{
   padding-top: 16rem;
+}
+
+.padding_footer{
+  padding-top: 6rem;
 }
 
 .color{
