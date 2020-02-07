@@ -188,6 +188,9 @@ body {
   background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
   color: white; }
 
+html, body {
+  overflow-x: hidden; }
+
 .button {
   color: white;
   padding: 9px 32px;
