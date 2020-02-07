@@ -226,9 +226,13 @@ h2 {
   color: white;
   font-size: 14px; }
 
+.color {
+  color: black; }
+
 .second_part {
   padding-top: 16rem;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
 
 .whitezone {
   background: white;
@@ -271,7 +275,7 @@ h2 {
   from {
     left: -100%; }
   to {
-    left: -63%; } }
+    left: 63%; } }
 .short-mode {
   width: 100%; }
 

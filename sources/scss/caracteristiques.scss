@@ -65,10 +65,13 @@ h2{
 }
 
 // second PART
-
+.color{
+  color: black;
+}
 .second_part{
   padding-top: 16rem;
   text-align: center;
+  z-index: 1
 }
 
 .whitezone{
@@ -116,7 +119,7 @@ h2{
 
 @keyframes fade_right_animate {
   from {left: -100%;}
-  to {left: -63%;}
+  to {left: 63%;}
 }
 
 .short-mode{
