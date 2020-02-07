@@ -67,12 +67,14 @@ li{
 
 .brosse_debout{
   transform: scale(0.6);
+  position: absolute;
+  left: -10%;
 }
 
 .socle{
   position: absolute;
-  bottom: 110px;
-  left: 60px;
+  bottom: -880px;
+  left: -50px;
 }
 
 select{

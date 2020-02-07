@@ -223,19 +223,21 @@ li {
 
 .brosseContainer {
   left: 190px;
-  top: -70px;
+  top: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .brosse_debout {
-  transform: scale(0.6); }
+  transform: scale(0.6);
+  position: absolute;
+  left: -10%; }
 
 .socle {
   position: absolute;
-  bottom: 110px;
-  left: 60px; }
+  bottom: -880px;
+  left: -50px; }
 
 select {
   outline: none;
@@ -265,15 +267,12 @@ h2 {
 
 .whitezone-up {
   position: absolute;
-  left: -1vw;
-  width: 101vw;
+  left: -40vw;
+  width: 271vw;
   right: 0;
-  bottom: 100%;
+  bottom: -3vw;
   z-index: -1;
-  transform: scale(1.5); }
-
-.h4_footer, .p_footer, .link {
-  color: black !important; }
+  transform: scale(0.9); }
 
 @media screen and (max-width: 960px) {
   .brosse_debout, .socle {
