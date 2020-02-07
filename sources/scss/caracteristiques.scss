@@ -109,18 +109,18 @@ h2{
 .fade_right{
   position: absolute;
   animation-fill-mode: both;
-  left: -108%;
+  left: -58%;
 }
-.fade_right_animate{
-  animation-name: fade_right;
-  animation-duration: 4s;
-  transition-timing-function: ease-in;
-}
-
-@keyframes fade_right_animate {
-  from {left: -100%;}
-  to {left: 63%;}
-}
+// .fade_right_animate{
+//   animation-name: fade_right;
+//   animation-duration: 4s;
+//   transition-timing-function: ease-in;
+// }
+//
+// @keyframes fade_right_animate {
+//   from {left: -100%;}
+//   to {left: 63%;}
+// }
 
 .short-mode{
   width: 100%;
