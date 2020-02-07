@@ -288,7 +288,7 @@ body {
   color: white;
   font-size: 14px; }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 60em) {
   .fade_left {
     position: initial;
     transform: scale(0.4);
@@ -297,7 +297,7 @@ body {
   .boitier {
     transform: scale(0.5);
     padding-left: -400px; } }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
   .white_border_header {
     display: none; }
 
@@ -322,17 +322,5 @@ body {
 
   .ces {
     display: none; } }
-@media screen and (max-width: 720px) {
-  .brosse_a_dent {
-    display: none; }
-
-  .boitier {
-    transform: scale(0.5);
-    margin-top: 300px;
-    margin-left: 600px; }
-
-  .phone {
-    transform: scale(0.4);
-    padding-right: 300px; } }
 
 /*# sourceMappingURL=main.css.map */

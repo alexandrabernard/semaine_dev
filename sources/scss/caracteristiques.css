@@ -260,14 +260,14 @@ h2 {
 .fade_right {
   position: absolute;
   animation-fill-mode: both;
-  left: -100%; }
+  left: -108%; }
 
 .fade_right_animate {
   animation-name: fade_right;
   animation-duration: 4s;
   transition-timing-function: ease-in; }
 
-@keyframes fade_right {
+@keyframes fade_right_animate {
   from {
     left: -100%; }
   to {
@@ -333,5 +333,11 @@ h2 {
 
   .fade_right {
     display: none; } }
+@media screen and (max-width: 45em) {
+  .white_border_header {
+    display: none; }
+
+  .responsive {
+    margin-right: 10px; } }
 
 /*# sourceMappingURL=caracteristiques.css.map */

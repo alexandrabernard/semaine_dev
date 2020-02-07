@@ -139,7 +139,7 @@ body{
 }
 //      FOOTER      //
 
-@media screen and (max-width:960px){
+@media screen and (max-width:$breakpoint-large){
   .fade_left{
     position: initial;
     transform: scale(0.4);
@@ -152,7 +152,7 @@ body{
   }
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:$breakpoint-med){
   .white_border_header{
     display: none;
   }
@@ -182,23 +182,5 @@ body{
 
   .ces{
     display: none;
-  }
-}
-
-@media screen and (max-width:720px){
-  .brosse_a_dent{
-    display: none;
-  }
-
-  .boitier{
-    transform: scale(0.5);
-    margin-top: 300px;
-    margin-left: 600px;
-  }
-
-  .phone{
-    transform: scale(0.4);
-    padding-right: 300px;
-
   }
 }
