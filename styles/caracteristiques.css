@@ -182,6 +182,9 @@ p {
   src: url("../font/AvenirLTStd-Book.otf");
   src: url("../font/AvenirLTStd-Medium.otf");
   src: url("../font/AvenirLTStd-Roman.otf"); }
+html, body {
+  overflow-x: hidden; }
+
 body {
   font-family: 'Avenir';
   background: #111d50;
@@ -218,6 +221,10 @@ div .brosse_debout {
 
 h2 {
   text-transform: uppercase; }
+
+.h4_footer, .p_footer {
+  color: white;
+  font-size: 14px; }
 
 .second_part {
   padding-top: 16rem;

@@ -290,7 +290,7 @@ body {
   padding-top: 16rem; }
 
 .padding_footer {
-  padding-top: 6rem; }
+  padding-top: 9rem; }
 
 .color {
   color: black; }
@@ -362,6 +362,10 @@ body {
   .boitier {
     transform: scale(0.5);
     margin-top: 300px;
-    margin-left: 300px; } }
+    margin-left: 600px; }
+
+  .phone {
+    transform: scale(0.4);
+    padding-right: 300px; } }
 
 /*# sourceMappingURL=main.css.map */
