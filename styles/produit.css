@@ -230,12 +230,14 @@ li {
   justify-content: center; }
 
 .brosse_debout {
-  transform: scale(0.6); }
+  transform: scale(0.6);
+  position: absolute;
+  left: -6.5%; }
 
 .socle {
   position: absolute;
-  bottom: 110px;
-  left: 60px; }
+  bottom: -880px;
+  left: -40px; }
 
 select {
   outline: none;
