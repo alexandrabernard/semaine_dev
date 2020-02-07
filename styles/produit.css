@@ -222,13 +222,17 @@ li {
 .icon_container p {
   margin: 0; }
 
-.brosseContainer {
-  left: 190px;
-  top: -70px;
+.foo{
   position: relative;
+}
+.brosseContainer {
+  left: 10px;
+  bottom: 100px;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  z-index: -1;}
 
 .brosse_debout {
   transform: scale(0.6); }
@@ -237,6 +241,8 @@ li {
   position: absolute;
   bottom: 110px;
   left: 60px; }
+
+
 
 select {
   outline: none;
@@ -275,9 +281,7 @@ h2 {
 
 /* .h4_footer, .p_footer, .link {
   color: black !important; } */
-#footer{
-  margin-top: 6vw;
-}
+
 @media screen and (max-width: 960px) {
   .brosse_debout, .socle {
     transform: scale(0.4); }
