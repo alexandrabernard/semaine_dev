@@ -59,7 +59,7 @@ li{
 .brosseContainer{
   left: 190px;
   top: -70px;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,6 +100,11 @@ h2{
   font-weight: 700;
 }
 
+// .padding_footer{
+//   padding-top: 6rem;
+// }
+
+
 // form {
 //   border-radius: 5px;
 //   background-color: #f2f2f2;
@@ -119,13 +124,17 @@ h2{
 
 .whitezone-up{
   position: absolute;
-  bottom: 100%;
+  // bottom: 100%;
   left: -1vw;
   width: 101vw;
   right: 0;
-  bottom: 0%;
+  bottom: 100%;
   z-index: -1;
   transform: scale(1.5);
+}
+
+.h4_footer, .p_footer, .link{
+  color: black !important;
 }
 
 // .iPutAMargin{ margin-top: 8rem; }
