@@ -58,7 +58,7 @@ li{
 
 .brosseContainer{
   left: 190px;
-  top: -70px;
+  top: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -124,18 +124,14 @@ h2{
 
 .whitezone-up{
   position: absolute;
-  // bottom: 100%;
-  left: -1vw;
-  width: 101vw;
+  left: -40vw;
+  width: 271vw;
   right: 0;
-  bottom: 100%;
+  bottom: -3vw;
   z-index: -1;
-  transform: scale(1.5);
+  transform: scale(0.9);
 }
 
-.h4_footer, .p_footer, .link{
-  color: black !important;
-}
 
 // .iPutAMargin{ margin-top: 8rem; }
 // .fade_bottom{

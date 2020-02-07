@@ -216,23 +216,18 @@ li {
 
 .iPutAPadding .button_container {
   padding-right: 50px;
-  padding-left: 0px;
-  padding-bottom:40px; }
+  padding-left: 0px; }
 
 .icon_container p {
   margin: 0; }
 
-.foo{
-  position: relative;
-}
 .brosseContainer {
-  left: 10px;
-  bottom: 100px;
-  position: absolute;
+  left: 190px;
+  top: 10px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: -1;}
+  justify-content: center; }
 
 .brosse_debout {
   transform: scale(0.6); }
@@ -241,8 +236,6 @@ li {
   position: absolute;
   bottom: 110px;
   left: 60px; }
-
-
 
 select {
   outline: none;
@@ -278,9 +271,6 @@ h2 {
   bottom: -3vw;
   z-index: -1;
   transform: scale(0.9); }
-
-/* .h4_footer, .p_footer, .link {
-  color: black !important; } */
 
 @media screen and (max-width: 960px) {
   .brosse_debout, .socle {
