@@ -128,20 +128,20 @@ h2{
   transform: scale(1.5);
 }
 
-.iPutAMargin{ margin-top: 8rem; }
-.fade_bottom{
-  position: relative;
-  animation-name: fade_bottom;
-  animation-duration: 4s;
-  // animation-fill-mode: both;
-  transition-timing-function: ease-in;
-  // bottom: 25%;
-}
-
-@keyframes fade_bottom {
-  from {top: -100%;}
-  to {top: 10%;}
-}
+// .iPutAMargin{ margin-top: 8rem; }
+// .fade_bottom{
+//   position: relative;
+//   animation-name: fade_bottom;
+//   animation-duration: 4s;
+//   // animation-fill-mode: both;
+//   transition-timing-function: ease-in;
+//   // bottom: 25%;
+// }
+//
+// @keyframes fade_bottom {
+//   from {top: -100%;}
+//   to {top: 10%;}
+// }
 
 @media screen and (max-width: 960px){
   .brosse_debout, .socle{
