@@ -188,6 +188,9 @@ body {
   background: linear-gradient(90deg, #111d50 0%, #1a0e47 35%, #191148 100%);
   color: white; }
 
+html, body {
+  overflow-x: hidden; }
+
 .button {
   color: white;
   padding: 9px 32px;
@@ -267,21 +270,27 @@ h2 {
   width: 101vw;
   right: 0;
   bottom: 0%;
-  z-index: -1; }
+  z-index: -1;
+  transform: scale(1.5); }
 
-.iPutAMargin {
-  margin-top: 8rem; }
+@media screen and (max-width: 960px) {
+  .brosse_debout, .socle {
+    transform: scale(0.4); }
 
-.fade_bottom {
-  position: relative;
-  animation-name: fade_bottom;
-  animation-duration: 4s;
-  transition-timing-function: ease-in; }
+  .brosseContainer {
+    left: 10px;
+    top: 235px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
-@keyframes fade_bottom {
-  from {
-    top: -100%; }
-  to {
-    top: 10%; } }
+  .socle {
+    position: absolute;
+    bottom: 220px;
+    left: 60px; } }
+@media screen and (max-width: 720px) {
+  .brosseContainer {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=produit.css.map */
