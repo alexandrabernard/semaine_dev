@@ -232,6 +232,10 @@ body {
   right: -12%;
   top: -2%; }
 
+.h2_footer, p_footer {
+  color: white;
+  font-size: 14px; }
+
 .link_footer {
   color: white;
   text-decoration: none;
@@ -311,6 +315,9 @@ body {
 
 .iPutAPadding {
   padding-top: 16rem; }
+
+.padding_footer {
+  padding-top: 6rem; }
 
 .color {
   color: black; }
