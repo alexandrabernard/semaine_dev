@@ -27,10 +27,6 @@ body {
   transform-origin: center;
   transition: all .2s ease-in-out; }
 
-#footer {
-  display: flex;
-  align-items: center;
-  height: 150px; }
 
 .border {
   position: relative; }
@@ -42,6 +38,11 @@ body {
   width: 1.5px;
   right: -12%;
   top: -2%; }
+  
+  #footer {
+    display: flex;
+    align-items: center;
+    height: 150px; }
 
 h2, p {
   color: white;
